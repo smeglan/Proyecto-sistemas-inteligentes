@@ -1,0 +1,3 @@
+execute flask:
+  -set FLASK_APP=api
+  -flask run
