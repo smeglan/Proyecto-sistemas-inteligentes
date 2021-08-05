@@ -1,4 +1,4 @@
-<h1>Proyecto final sistemas inteligentes 2</h1>
+<h1>Proyecto final sistemas inteligentes 2(readme en contrucción)</h1>
 
 <h2>Primera parte</h2>
 <p>1. El <b>API</b> que recibe procesa los datos del ROI se encuentra en /app/server/api.py, puede dar click aqui para visualizar el archivo <a href='./app/server/api.py'>link</a></p>
