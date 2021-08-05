@@ -1,9 +1,9 @@
 <h1>Proyecto final sistemas inteligentes 2</h1>
 
 <h2>Primera parte</h2>
-<p>El api que recibe procesa los datos del ROI se encuentra en /app/server/api.py, puede dar click aqui para visualizar el archivo <a href='./app/server/api.py'>link</a></p>
+<p>El <b>API</b> que recibe procesa los datos del ROI se encuentra en /app/server/api.py, puede dar click aqui para visualizar el archivo <a href='./app/server/api.py'>link</a></p>
 <br/>
-<p>El visor del ROI se encuentra en /app/client/visor.py, puede dar click aqui para visualizar el archivo <a href='./app/client/visor.py'>link</a></p>
+<p>El <b>visor del ROI</b> se encuentra en /app/client/visor.py, puede dar click aqui para visualizar el archivo <a href='./app/client/visor.py'>link</a></p>
 <br/>
 <h3>Comandos del teclado</h3>
 <table>
