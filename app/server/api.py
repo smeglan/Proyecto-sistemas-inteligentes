@@ -21,7 +21,10 @@ def runCNN(list, images):
             im_bytes = base64.b64decode(image["value"])
             # im_arr is one-dim Numpy array
             im_arr = np.frombuffer(im_bytes, dtype=np.uint8)
-            img = cv.imdecode(im_arr, flags=cv.IMREAD_GRAYSCALE)
+            decode = cv.imdecode(im_arr, flags=cv.IMREAD_GRAYSCALE)
+            cv.imwrite(name, decode)
+            img = cv.imread(name)
+            img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
             img = img.flatten()
             img = img/255
             predict = models[i].predict(img)
