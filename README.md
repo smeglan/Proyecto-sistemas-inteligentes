@@ -37,16 +37,15 @@
 <p>
   1. Para la construcción del dataset se utilizo un script que genera las clases y aplica varios filtros, generando tambien una carpeta con los datos de entrenamientos dividos por clase, dicho script se encuentra en la carpeta app/server/trainer.py <a href='./app/server/trainer.py'>link</a>
 </p>
-<b>
+<p>>
   2. La implementación de las 3 redes neuronales se encuentra en el archivo  <a href='./app/server/CNNBuilder.py'>CNNBuilder.py</a> con sus respectivas entradas y clases.
-</b>
-<br/>
-<b>
+</p>
+<p>
   3. El proceso de entrenamiento se encuentra en el archivo <a href='./app/server/CNNBuilder.py'>CNNBuilder.py</a>, todo con un 10 KFold.
-</b>
-<b>
+</p>
+<p>
   4. 
-<b>
+</p>
 <h3>Tabla de Resultados</h3>
 <table>
   <tr>
