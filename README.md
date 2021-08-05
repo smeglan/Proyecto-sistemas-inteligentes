@@ -126,11 +126,48 @@
 </table>
 
 <h4>Model 3</h4>
-[[ 45   0   1   0   0]
- [  0 104   2   0   0]
- [  2   0  45   0   0]
- [  0   0   0  35   0]
- [  0   6   0   0  40]]
+[[49  5  3  0  0]
+ [ 0 91  0  0  0]
+ [ 0  0 56  0  2]
+ [ 0  1  0 33  0]
+ [ 1  1  0  0 38]]
+ <table>
+  <tr>
+    <td>49</td>
+    <td>5</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>91</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>56</td>
+    <td>0</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>33</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td>38</td>
+  </tr>
+</table>
 <h3>Tabla de Resultados</h3>
 <table>
   <tr>
@@ -169,11 +206,11 @@
   <tr>
     <td>3</td>
     <td>Model 3</td>
-    <td>0.9857</td>
-    <td>0.98</td>
-    <td>1</td>
-    <td>0.99</td>
-    <td>0.0843</td>
+    <td>0.9571</td>
+    <td>0.96</td>
+    <td>0.93</td>0.96 
+    <td>0.94</td>
+    <td>0.0848</td>
     <td>22</td>
     <td></td>
   </tr>
