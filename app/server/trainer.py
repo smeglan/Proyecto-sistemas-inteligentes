@@ -29,11 +29,13 @@ def prepareToSaveGaussian(image, width=256, height=256):
 
 def prepareToSaveCanny(image, width=256, height=256):
     dim = (width, height)
+    image = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     image = cv.Canny(image, 125, 175)
     return cv.resize(image, dim, interpolation=cv.INTER_AREA)
 
 def prepareToSaveGCanny(image, width=256, height=256):
     dim = (width, height)
+    image = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
     image = cv.GaussianBlur(image, (7,7), cv.BORDER_DEFAULT)
     image = cv.Canny(image, 125, 175)
     return cv.resize(image, dim, interpolation=cv.INTER_AREA)
@@ -59,5 +61,5 @@ datasetRoot = "dataset"
 if not os.path.exists(datasetRoot):
     os.makedirs(datasetRoot)
 
-createDataSet("raw_set", datasetRoot+"/train")
+createDataSet("raw", datasetRoot+"/train")
 
