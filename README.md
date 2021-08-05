@@ -46,6 +46,25 @@
 <p>
   4. 
 </p>
+<h3>Matriz de confusión</h3>
+<h4>Model 1</h4>
+[[ 45   0   1   0   0]
+ [  0 104   2   0   0]
+ [  2   0  45   0   0]
+ [  0   0   0  35   0]
+ [  0   6   0   0  40]]
+<h4>Model 2</h4>
+[[56  0  0  0  0]
+ [ 0 94  0  0  0]
+ [ 0  4 52  0  0]
+ [ 0  0  0 28  0]
+ [ 0  0  0  0 46]]
+<h4>Model 3</h4>
+[[ 45   0   1   0   0]
+ [  0 104   2   0   0]
+ [  2   0  45   0   0]
+ [  0   0   0  35   0]
+ [  0   6   0   0  40]]
 <h3>Tabla de Resultados</h3>
 <table>
   <tr>
@@ -55,28 +74,42 @@
     <th>Precision</th>
     <th>Recall</th>
     <th>F1</th>
-    <th>Score</th>
     <th>Loss</th>
     <th>Epocas</th>
     <th>Tiempos</th>
   </tr>
   <tr>
+    <td>1</td>
+    <td>Model 1</td>
+    <td>1</td>
+    <td>0.95</td>
+    <td>0.98</td>
+    <td>0.97</td>
+    <td>0.1185</td>
+    <td>22</td>
     <td></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Model 2</td>
+    <td>0.9857</td>
+    <td>0.98</td>
+    <td>1</td>
+    <td>0.99</td>
+    <td>0.0843</td>
+    <td>22</td>
     <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Model 3</td>
+    <td>0.9857</td>
+    <td>0.98</td>
+    <td>1</td>
+    <td>0.99</td>
+    <td>0.0843</td>
+    <td>22</td>
     <td></td>
   </tr>
 </table>
 <br/>
-<br/>
-<h2>Video de youtube</h2>
-<a href="https://www.youtube.com/watch?v=EtUNMJWU9LQ">
-  <img src="https://www.uncommunitymanager.es/wp-content/uploads/seo_google_youtube.jpg"/>
- </a>
-<p>Disponible en <a href="https://www.youtube.com/watch?v=EtUNMJWU9LQ">Video</a></p>
