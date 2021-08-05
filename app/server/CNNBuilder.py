@@ -5,6 +5,7 @@ import numpy as np
 import cv2 as cv
 import numpy as np
 import os
+from sklearn import metrics
 from sklearn.model_selection import KFold
 from pathlib import Path
 
@@ -98,6 +99,18 @@ model3.compile(
     metrics=['accuracy', keras.metrics.Recall()],
 )
 
+def metricsModels(model, X, y):
+    kfd = KFold(n_splits=4, shuffle=True)
+    print(X)
+    for t, test in kfd.split(X, y):
+        trainX, testX = X[t], X[test]
+        trainY, testY = y[t], y[test]
+        model.fit( trainX, trainY, validation_data=(testX, testY), epochs=epochs)
+        predictions = model.predict(testX)
+        y_pred = (predictions > 0.5)
+        matrix = metrics.confusion_matrix(testY.argmax(axis=1), y_pred.argmax(axis=1))
+        print(matrix)
+        print(metrics.classification_report(testY, y_pred, labels=np.unique(y_pred)))
 
 def kfoldValidator(model, X, y):
     kfd = KFold(n_splits=10, shuffle=True)
@@ -108,6 +121,15 @@ def kfoldValidator(model, X, y):
         model.fit( trainX, trainY, validation_data=(testX, testY), epochs=epochs)
 
 train_data, labels = loadImages("dataset/train", num_classes)         
+
+print("model1")
+metricsModels(model1, train_data, labels)
+#print("model2")
+#metricsModels(model2, train_data, labels)
+#print("model3")
+#metricsModels(model3, train_data, labels)
+
+"""
 print("model1")
 kfoldValidator(model1, train_data, labels)
 model1.save("model1.h5")
@@ -117,3 +139,4 @@ model2.save("model2.h5")
 print("model3")
 kfoldValidator(model3, train_data, labels)
 model1.save("model3.h5")
+"""
