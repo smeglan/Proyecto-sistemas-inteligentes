@@ -37,7 +37,7 @@
 <p>
   1. Para la construcción del dataset se utilizo un script que genera las clases y aplica varios filtros, generando tambien una carpeta con los datos de entrenamientos dividos por clase, dicho script se encuentra en la carpeta app/server/trainer.py <a href='./app/server/trainer.py'>link</a>
 </p>
-<p>>
+<p>
   2. La implementación de las 3 redes neuronales se encuentra en el archivo  <a href='./app/server/CNNBuilder.py'>CNNBuilder.py</a> con sus respectivas entradas y clases.
 </p>
 <p>
@@ -48,17 +48,83 @@
 </p>
 <h3>Matriz de confusión</h3>
 <h4>Model 1</h4>
-[[ 45   0   1   0   0]
- [  0 104   2   0   0]
- [  2   0  45   0   0]
- [  0   0   0  35   0]
- [  0   6   0   0  40]]
+<table>
+  <tr>
+    <td>45</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>104</td>
+    <td>2</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>45</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>35</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>6</td>
+    <td>0</td>
+    <td>0</td>
+    <td>40</td>
+  </tr>
+</table>
+
 <h4>Model 2</h4>
-[[56  0  0  0  0]
- [ 0 94  0  0  0]
- [ 0  4 52  0  0]
- [ 0  0  0 28  0]
- [ 0  0  0  0 46]]
+ <table>
+  <tr>
+    <td>56</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>94</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>4</td>
+    <td>52</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>28</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>46</td>
+  </tr>
+</table>
+
 <h4>Model 3</h4>
 [[ 45   0   1   0   0]
  [  0 104   2   0   0]
