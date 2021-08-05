@@ -211,3 +211,5 @@
   </tr>
 </table>
 <br/>
+
+<p>5. Todos los modelos ya entrenados se encuentran en la siguiente <a href="https://drive.google.com/drive/folders/1894DP9ukYQtkOH7CldbT6hoUOzLaUDld?usp=sharing">carpeta Google Drive</a></p>
