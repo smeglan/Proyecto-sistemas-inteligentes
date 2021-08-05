@@ -40,6 +40,7 @@
 <b>
   2. La implementación de las 3 redes neuronales se encuentra en el archivo  <a href='./app/server/CNNBuilder.py'>CNNBuilder.py</a> con sus respectivas entradas y clases.
 </b>
+<br/>
 <b>
   3. El proceso de entrenamiento se encuentra en el archivo <a href='./app/server/CNNBuilder.py'>CNNBuilder.py</a>, todo con un 10 KFold.
 </b>
